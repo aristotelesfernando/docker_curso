@@ -1,0 +1,10 @@
+FROM mysql:5.7
+
+COPY schema.sql /docker-entrypoint-initdb.d/
+
+EXPOSE 3306
+
+
+# docker build -t mysqlapinetwork .
+# docker network create flasknetwork
+# docker run -d -p 3366:3306 --name mysql_api_container --rm --network flasknetwork -e MYSQL_ALLOW_EMPTY_PASSWORD=True mysqlapinetwork
