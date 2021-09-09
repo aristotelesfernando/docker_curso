@@ -1,0 +1,7 @@
+docker run 
+    -d 
+    -p 8088:80 
+    --name php_cont_02 
+    -v D:\src\src_docker\curso_docker\imagem02\messages:/var/www/html/messages 
+    --rm 
+    

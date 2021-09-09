@@ -1,0 +1,7 @@
+docker run 
+    -d 
+    -p 8089:80 
+    --name php_cont_02 
+    -v phpvolume:/var/www/html/messages 
+    --rm 
+    -v /data phpmessages
